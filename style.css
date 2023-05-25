@@ -1,0 +1,203 @@
+.tableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tableContainer > table {
+    width: 800px;
+    border-collapse: separate;
+    border-spacing: 20px;
+    text-align: left;
+}
+
+.tableContainer > table th {
+    padding-left: 20px;
+}
+
+.tableItem {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.tableItem > td {
+    padding: 16px 20px;
+    font-weight: 500;
+}
+
+.deleteButton {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: aqua;
+    z-index: 99;
+    right: 30px;
+    top: 20px;
+}
+
+
+.headingWrapper {
+width: 800px;
+margin-bottom: 20px;
+}
+
+.filter-input {
+border-radius: 10px;
+padding: 6px 10px;
+border: 2px solid rgb(213, 213, 213);
+}
+
+.filter-input:focus {
+outline-color: transparent;
+outline-style: none;
+}
+.filter-input-id {
+border-radius: 10px;
+padding: 6px 10px;
+border: 2px solid rgb(213, 213, 213);
+max-width: 60px;
+}
+
+.filter-input-id:focus {
+outline-color: transparent;
+outline-style: none;
+}
+
+label {
+margin-right: 10px;
+}
+.add-button {
+border-radius: 10px;
+padding: 5px 10px;
+border: 2px solid #00ff75;
+background-color: white;
+margin-left: 20px;
+cursor: pointer;
+}
+
+.add-buttonWrapper {
+  flex-basis: 100%; /* Make the wrapper take full width */
+  margin-top: 10px;
+}
+
+.devider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .addUserHr {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .mainHr {
+    width: 900px;
+    margin: 20px auto;
+  }
+  
+
+.container {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.update-buttonWrapper {
+  min-width: 120px;
+  /* min-height: 50px; */
+  }
+
+.updateUserContainer {
+    display: none;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Additional styling properties */
+    margin: 24px auto;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .updateUserContainer > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  
+  .updateUserContainer > div > div {
+    flex-basis: 15%;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box; /* Add this property to include padding in the width calculation */
+  }
+  
+  .updateUserContainer > div > div:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  .updateUserContainer > div > div:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+  
+  .updateUserContainer > div:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+
+
+.addUserContainer {
+margin: 24px 0;
+width: 100%;
+max-width: 800px;
+}
+
+.addUserContainer > div:first-of-type {
+display: flex;
+justify-content: space-between;
+margin-bottom: 16px;
+}
+
+.addUserContainer > div:first-of-type > div:not(:last-child) {
+margin-right: 16px;
+}
+
+.addUserContainer > div:last-of-type {
+display: flex;
+justify-content: flex-end;
+}
+
+.filters {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap to the next row */
+  justify-content: space-between;
+  align-items: center; /* Center-align items vertically */
+}
+
+.filters > div > div {
+  display: flex;
+  margin-right: 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.filters > div {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow elements to wrap to the next row */
+}
+
+.filters > div > div:last-child {
+  margin-top: 10px; /* Add margin to create space below */
+}

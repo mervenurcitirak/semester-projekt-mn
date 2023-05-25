@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="updateMemberContainer">
+    <div class="headingWrapper">
+      <h2>Member</h2>
+      <button id="backButton">Back to Home Page</button>
+
+    </div>
+    <div class="filters">
+      <div>
+        <label>Name:</label>
+        <span id="memberName"></span>
+      </div>
+      <div>
+        <label>Age:</label>
+        <span id="memberAge"></span>
+      </div>
+      <div>
+        <label>ID:</label>
+        <span id="memberId"></span>
+      </div>
+      <div>
+        <label>Position:</label>
+        <span id="memberPosition"></span>
+      </div>
+      <div class="update-buttonWrapper">
+        <button class="add-button" id="updateButtonForm">Update Member</button>
+      </div>
+    </div>
+  </div>
+
+  <hr class="devider mainHr" />
+  <div id="updateUserSection" class="updateUserContainer" style="display: none;">
+    <div>
+      <div>
+        <label>FirstName</label>
+        <input class="filter-input" id="firstNameInput" />
+      </div>
+      <div>
+        <label>LastName</label>
+        <input class="filter-input" id="lastNameInput" />
+      </div>
+      <div>
+        <label>Age</label>
+        <input class="filter-input" id="ageInput" />
+      </div>
+      <div>
+        <label>Position</label>
+        <input class="filter-input" id="positionInput" />
+      </div>
+      <div>
+        <label>Discipline</label>
+        <input class="filter-input" id="disciplineInput" />
+      </div>
+      <div>
+        <label>Payment</label>
+        <input class="filter-input" id="paymentInput" />
+      </div>
+      <div>
+        <label>HasPaidDues</label>
+        <input class="filter-input" id="hasPaidDuesInput" type="checkbox" />
+      </div>
+      <div>
+        <label>Membership</label>
+        <input class="filter-input" id="membershipInput" />
+      </div>
+      <div>
+        <label>Swimming Type</label>
+        <input class="filter-input" id="swimmingTypeInput" />
+      </div>
+      <div>
+        <label>Best Result</label>
+        <input class="filter-input" id="bestResultInput" />
+      </div>
+      <div>
+        <label>Coach Name</label>
+        <input class="filter-input" id="coachNameInput" />
+      </div>
+      <div>
+        <label>Convention</label>
+        <input class="filter-input" id="conventionInput" />
+      </div>
+      <div>
+        <label>Date</label>
+        <input class="filter-input" id="dateInput" />
+      </div>
+      <div>
+        <label>Latest Result</label>
+        <input class="filter-input" id="latestResultInput" />
+      </div>
+      <div>
+        <label>Placement</label>
+        <input class="filter-input" id="placementInput" />
+      </div>       
+    </div>
+    <label style="color: red" id="errorMessage"></label>
+    <div>
+      <button class="add-button" id="updateUserButton">Update User</button>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

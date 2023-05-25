@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="headingWrapper">
+      <h2>Filters</h2>
+      <p id="totalPayment"></p>
+      <button id="toTopListButton">Top List</button>
+    </div>
+    <div class="filters">
+      <div>
+        <div>
+          <label>Name</label>
+          <input id="nameFilter" class="filter-input" />
+        </div>
+        <div>
+          <label>Age</label>
+          <input id="ageFilter" class="filter-input" />
+        </div>
+        <div>
+          <label>Position</label>
+          <input id="positionFilter" class="filter-input" />
+        </div>
+        <div>
+          <label>HasPaidDues</label>
+          <input id="hasPaidDuesFilter" class="filter-input" />
+        </div>
+      </div>
+      <div class="add-buttonWrapper">
+        <button id="addUserButton" class="add-button" onclick="toggleAddUserSection()">Add User</button>
+      </div>
+    </div>
+    <br>
+
+    <div class="addUserContainer" id="addUserContainer" style="display: none;">
+      <br>
+      <hr class="devider addUserHr" />
+      <br>
+      <div>
+        <div>
+          <label>First Name</label>
+          <input id="firstNameInput" class="filter-input" required />
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input id="lastNameInput" class="filter-input" required />
+        </div>
+        <div>
+          <label>Age</label>
+          <input id="ageInput" class="filter-input" required />
+        </div>
+        <div>
+          <label>Id</label>
+          <input id="idInput" class="filter-input" required />
+        </div>
+      </div>
+      <label style="color: red" id="errorMessage"></label>
+      <div>
+        <button class="add-button" onclick="addNewUser()">Add</button>
+      </div>
+    </div>
+    <hr class="devider mainHr" />
+    <div class="tableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Position</th>
+            <th>Id</th>
+          </tr>
+        </thead>
+        <tbody id="memberTable"></tbody>
+      </table>
+    </div>
+
+  </div>
+  <script defer src="script.js"></script>
+
+</body>
+
+</html>
